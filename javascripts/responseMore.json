@@ -1,0 +1,44 @@
+{
+  "songs": [
+    {
+    "name": "Me & Mr. Jones",
+    "album": {
+        "name": "Back to Black",
+        "year": 2006
+      },
+      "artists": "Amy Winehouse"
+    }, 
+    {
+    "name": "Deja Vu",
+    "album": {
+        "name": "B-Day",
+        "year": 2004
+      },
+      "artists": "Beyonce"
+    }, 
+    {
+    "name": "Shoop",
+    "album": {
+        "name": "Waiting to Exhale (Original Motion Picture Soundtrack)",
+        "year": 1987
+      },
+      "artists": "Whitney Houston"
+    }, 
+    {
+    "name": "Heavy Metal & Reflective",
+    "album": {
+        "name": "Broke With Expensive Tastes",
+        "year": 2014
+      },
+      "artists": "Azealia Banks"
+    }, 
+    {
+    "name": "Youth In Trouble",
+    "album": {
+        "name": "Pacifica",
+        "year": 2013
+      },
+      "artists": "The Presets"
+    } 
+  ]
+  }

@@ -1,0 +1,223 @@
+/* header */
+#page{
+  font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border: 1px dotted black;
+  display:flex;
+  flex-wrap: wrap; 
+  flex-direction: column; 
+  /*max-width: 53.500em;
+  width: 100%;*/
+  /*justify-content: auto;*/
+  
+}
+.main-content {
+  border: 2px solid black;
+  background-color: #FFB4B0; 
+  padding:20px 20px;
+ /* margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;*/
+  /*max-width: 100%;*/
+  /*width: 50.750em;*/
+  height:25px;
+  display: block;
+  /*flex-grow: 8;*/
+}
+
+.nav-content  {
+  font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin-top:5px;
+  margin-left: 10px;
+}
+a:link {
+  color:#1464F6;
+}
+
+#no-dec {
+  /*padding-right: 5px;*/
+  text-decoration: none;
+  color: #333;
+  /*border-right: 1px solid black;*/
+}
+.border-right{
+  border-right: 1.5px solid black;
+  padding-right: 5px;
+}
+
+#blue-container {
+  /*border: 3px dotted black;*/
+  /*flex-direction: row;*/
+  width: 100%;
+  height: 100%;
+
+}
+
+
+/* Left Section */
+
+#options-box {
+  border: 2px solid black;
+  max-width: 11.875em;
+  max-height: 100%;
+  width: 100%;
+  height: 23.688em;
+  margin-top: 20px;
+  margin-bottom: 0px;
+/*  margin-left: 10px;
+  margin-right: 0px;*/
+  background-color: #4DD7FA;
+  display: inline-block;
+  float:left;
+  /*flex-grow:2;*/ 
+}
+
+.options-text {
+  margin-left: 15px;
+  font-size: 15px;  
+}
+
+.input {
+  width:77px;
+  height: 15px;
+  margin-left: 15px;
+  padding-bottom:
+}
+
+
+.range{
+  width: 155px;
+}
+.drop-down {
+  width: 155px;
+}
+
+#genre-text{
+  font-size: 12px;
+  display: flex;
+  margin: -10px 15px;
+  /*border: 2px solid black;*/
+  min-width: 155px;
+  height: auto;
+  width:auto;
+  min-height: 90px; 
+  clear: both;
+  position: absolute;
+  text-align: justify;
+  
+
+}
+
+#column-one li {
+  width:77.5px;
+  list-style-type: none;
+  margin-left: -40px;
+  /*float:left;*/
+  
+}
+
+#column-two li {
+  width:77.5px;
+  list-style-type: none;
+  margin-left: -50px;
+  white-space: nowrap;
+}
+
+ #button-id {
+  width: 110px;
+  height:25px;
+  /*border: 2px solid black;*/
+  display: inline;
+
+   /*width: auto;*/
+   /*height: auto;*/
+
+  }
+.button{
+  border: 2px solid black;
+  border-radius: 5px 5px;
+  margin-top: 98px;
+  margin-left: 25%;
+  margin-right: 25%;
+  position: static;
+  min-width: 100%;
+  min-height: 100%;
+  min-width: 75px;
+  min-height: 25px;
+  /* margin: 0 auto;*/
+  padding: 0;
+  display: inherit;
+}
+
+
+
+
+/* Right Section */
+
+
+#songs-content {
+  border: 2px solid black;
+  max-width: 37.750em;
+  max-height: 100%;
+  width: 100%;
+  height: 23.688em;
+  margin-top:20px;
+  margin-left: 10px; 
+  /*padding-left: 30px;*/
+  /*background-color: #4DD7FA;*/
+  float: right;
+  overflow: scroll;
+  }
+#actual-songs{
+  /*padding-left: 30px;*/
+}
+
+/*Addin Javascript changes*/
+
+}
+#java-styling {
+  display: inline;
+}
+.java-styling:nth-child(2n+0)  {
+  background-color: #FFF5EE;
+}
+.java-styling:nth-of-type(2n+1)  {
+  background-color: #F5FFFA;
+}
+
+/*////////// Adding JSON ///////////*/
+
+#song-container{
+  background-color: #3399FF;
+  font-family:  'Lato',sans-serif;
+
+}
+#song-album{
+  font-size: 1em;
+}
+#song-title{
+  font-size: 1.5em;
+
+}
+.delete{
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

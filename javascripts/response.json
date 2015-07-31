@@ -1,0 +1,44 @@
+{
+  "songs": [
+    {
+    "name": "Love is a Losing Game",
+    "album": {
+        "name": "Back to Black",
+        "year": 2006
+      },
+      "artists": "Amy Winehouse"
+    }, 
+    {
+    "name": "Upgrade U",
+    "album": {
+        "name": "B-Day",
+        "year": 2004
+      },
+      "artists": "Beyonce"
+    }, 
+    {
+    "name": "Sittin' Up In My Room",
+    "album": {
+        "name": "Waiting to Exhale (Original Motion Picture Soundtrack)",
+        "year": 1987
+      },
+      "artists": "Brandy"
+    }, 
+    {
+    "name": "Ice Princess",
+    "album": {
+        "name": "Broke With Expensive Tastes",
+        "year": 2014
+      },
+      "artists": "Azealia Banks"
+    }, 
+    {
+    "name": "Its Cool",
+    "album": {
+        "name": "Pacifica",
+        "year": 2013
+      },
+      "artists": "The Presets"
+    } 
+  ]
+  }

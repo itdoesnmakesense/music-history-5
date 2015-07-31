@@ -1,0 +1,29 @@
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 320px) and (max-width: 650px) {
+  
+  /* header */
+  
+  	#primary {
+  		width:25%;
+  		float: left;
+
+  	}
+
+  	#secondary {
+  		width: 50%;
+  		float:right;
+  	}
+
+    #blue-container {
+      width: 100%;
+    }
+
+}
+
+
+@media screen and (min-width:660px){
+	#blue-container {
+      width: 100%;
+    }
+}

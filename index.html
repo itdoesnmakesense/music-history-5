@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="responsive.css">
+      <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+      <title>Music Player</title>
+    </head>
+  <body id="page">
+          <header class="main-content">
+            <div id="nav-list">
+              <nav class="nav-content">
+                <a id= "no-dec" class="border-right" href="#">View Music</a>
+                <a class="border-right" href="#">Add Music</a>
+                <a href="#">Profile</a>
+              </nav>
+            </div>
+          </header>
+    <div id="blue-container">
+            <div id="options-box">
+                <section id="primary">
+                    <div class="options-text"> 
+                      <p>Song Length:</p>
+                    </div>
+                          <div class="input">
+                            <input class="range" type="range">
+                          </div>
+                    <div class="options-text"> 
+                      <p>Artists:</p>
+                    </div>
+                          <div class="input" >
+                            <select class="drop-down" name="artists">
+                              <option value="Options">Options</option>
+                              <option value="Tink">Tink</option>
+                              <option value="Azealia Banks">Azealia Banks</option>
+                              <option value="Beyonce">Beyonce</option>
+                              <option value="The Presets">The Presets</option>
+                              <option value="Diplo">Diplo</option>
+                            </select>
+                          </div>
+                    <div class="options-text"> 
+                      <p>Album:</p>
+                    </div>
+                          <div class="input" >
+                            <select class="drop-down" name="album">
+                              <option value="Options">Options</option>
+                              <option value="Pinkprint">Pinkprint</option>
+                              <option value="B-Day">B-day</option>
+                              <option value="Dangerously In Love">Dangerously In Love</option>
+                              <option value="4">4</option>
+                              <option value="Broke With Expensive Taste">Broke With Expensive Taste</option>
+                            </select>
+                          </div>
+                    <div class="options-text"> 
+                      <p>Genre:</p>
+                    </div>
+                    <div id="genre-text"class="input" >
+                            <div id="column-one">
+                              <ul>
+                                <li><input class="padding" type="checkbox">Pop</li>
+                                <li><input class="padding" type="checkbox">R&amp;B</li>
+                                <li><input class="padding" type="checkbox">Seapunk</li>
+                              </ul>
+                            </div>
+                            <div id="column-two">
+                              <ul>
+                                <li><input class="padding" type="checkbox">Bubble Gum</li>
+                                <li><input class="padding" type="checkbox">HealthGoth</li>
+                                <li><input class="padding" type="checkbox">Rap</li>
+                              </ul>
+                            </div>
+                    </div>
+                    <div id="button-id">
+                        <input class="button" type="button" onclick="alert('Watch Me Filter!')" value="Filter!" font-size:"14px">
+                    </div>
+                </section>
+            </div>
+            <div id="songs-content">
+                <div class="actual-songs"class="java-styling">
+            
+                </div> 
+                <div id="moreSongs"></div>
+                <button id="moreButton">More</button>       
+            </div>
+
+    </div>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script data-main="javascripts/main" src="bower_components/requirejs/require.js"></script>
+<!--  /* <script src="/javascripts/music.js"></script> -->
+
+  </body>
+</html>
+
+
+
+
+
