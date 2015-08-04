@@ -1,18 +1,15 @@
 define(function() {
- var songs = [];
+ //var songs = [];
+ //songs = data.songs
 
  return {
-   setSongs: function() {
+   setSongs: function(callback) {
     $.ajax({
         url: "javascripts/responseMore.json",
-        async: false
-        }).done(function(data){
-     songs = data.songs;
+        }).done(function(dataMore){
+     callback.call(this, dataMore.songs);
    });
 },
 
-   getSongs: function() {
-     return songs;
-   }
  };
 });

@@ -1,0 +1,19 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333; }
+
+
+#left-container {
+  background-color: #415780;
+  border: 2px solid black;
+  display: inline-block;
+  float:left;
+}
+/*# sourceMappingURL=main.css.map */
+#songs-content {
+  background-color: #415780;
+  float: left;
+  color: #333;
+}
+.btn-group{
+}

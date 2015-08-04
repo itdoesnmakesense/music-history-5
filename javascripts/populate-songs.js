@@ -1,19 +1,14 @@
 define(function() {
- var songs = [];
 
  return {
-   setSongs: function() {
+   setSongs: function(callback) {
     $.ajax({
-        url: "javascripts/response.json",
-        async: false
+        url: "javascripts/response.json"
         }).done(function(data){
-     songs = data.songs;
-   });
-  },
+        callback.call(this, data.songs);
 
-   getSongs: function() {
-    return songs;
-   }
- };
-});
+   });
+  }
+};
+  });
 
