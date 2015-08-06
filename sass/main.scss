@@ -27,14 +27,26 @@ body {
   clear: both;
   height: 25%;
   }
+.div-dropdown {
+  margin-left: 15px;
+ // padding: 20px;
+  width: 216px;
+  height: 10px;
+  border: 1px solid black;
+}
 
 
 
+ 
+/* ====== left Container dropdown ====== */    
 
-
-
-
-
+.hid-div {
+  border: 1px solid black;
+  padding: 40px;
+  height: 270px;
+  width: 45px;
+  display: relative;
+}
 
 
 /* ====== Right Container Playlist ====== */
@@ -86,23 +98,6 @@ body {
   
 }
 
-.ghost-button {
-  display: inline-block;
-  width: 390px;
-  padding: 8px;
-  color: #fff;
-  //border: 1px solid #fff;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  background: transparent;
-}
-.ghost-button:hover,
-.ghost-button:active {
-  background-color: #fff;
-  color: #000;
-}
-
 
 
 
@@ -139,12 +134,19 @@ body {
 
 
 table{
-  font-size: 13px;
+  font-size: 16px;
+  margin-top: 0;
+
+#table-idea {
+-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+}
 
   tr {
-   line-height: 25px;
+   line-height: 5px;
    min-height: 25px;
-   height: 25px;
+   height: 55px;
   }
 }
 
@@ -175,7 +177,11 @@ table{
   font-weight: bold;
   text-decoration: none;
 }
-
+#div-1 {
+  border: 1px solid black;
+  width: 216px;
+  height: 55px;
+}
 
 
 

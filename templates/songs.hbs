@@ -1,17 +1,5 @@
-{{!-- <div class="">
-{{#each songs}}
-<div>
-<h3>{{name}} {{album.year}}</h3>
-Perfomred by {{artist}} on the album {{album.name}}
-<button id='deleteButton' class='btn btn-default btn-xs'>
-<span class='glyphicon glyphicon-option-vertical' aria-hidden='true'> </span></button>
 
-</div>
-{{/each}}
-</div> --}}
-
-
-<table class="table table-hover">
+<table class="table table-box">
               <thead>
                   <tr class="header-row">
                     <th class="col-md-1" data-col="tracklist">#</th>
@@ -25,8 +13,8 @@ Perfomred by {{artist}} on the album {{album.name}}
   {{#each songs}}
                 
                 <tbody>
-                  <tr class="song-row clickable-row" data-control= "userBtn">
-                        <td class="col-md-1" data-col="tracklist">
+                  <tr class="song-row clickable-row" height="30">
+                        <td class="col-md-1" data-col="tracklist" >
                           <span class="content">
                             1
                             <button aria-label="Play: song" data-id= "play" class="aria-play-button btn-link"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> 
@@ -55,6 +43,8 @@ Perfomred by {{artist}} on the album {{album.name}}
                         </td>
                          <td class="col-md-1" data-col="rating">
                           <span class="content">
+                             <button aria-label="Play: song" data-id= "play" class="aria-play-button btn-link btn-xs"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></button><button aria-label="Play: song" data-id= "play" class="aria-play-button btn-link btn-xs"><span class="glyphicon glyphicon-thumbs-down" id="flip-glyphicon" aria-hidden="true"></span>
+                            </button>
                             
                           </span>
                         </td>

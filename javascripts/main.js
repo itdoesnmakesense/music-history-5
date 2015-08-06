@@ -20,9 +20,9 @@ requirejs(
 
       pop.setSongs(function(data){
         require(['hbs!../templates/songs'], function(songTemplate){
-         console.log(songTemplate(data));
+         // console.log(songTemplate(data));
           $("#table-idea").html(songTemplate(data));
-          console.log(data);
+          // console.log(data);
 
 
 
@@ -48,6 +48,14 @@ requirejs(
               $(".clickable-row").on('mouseout',function() {
                       $(this).find("button").hide();
                         });
+
+              $("#hid-div").hide();
+
+              $(".div-dropdown").on('mouseover',function(e){
+                console.log(e);
+                  $(this).find("#hid-div").toggle("slide");
+                  console.log(this);
+              });
 
         });
       });

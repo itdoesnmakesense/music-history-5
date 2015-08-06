@@ -20,6 +20,20 @@ body {
   clear: both;
   height: 25%; }
 
+.div-dropdown {
+  margin-left: 15px;
+  width: 216px;
+  height: 10px;
+  border: 1px solid black; }
+
+/* ====== left Container dropdown ====== */
+.hid-div {
+  border: 1px solid black;
+  padding: 40px;
+  height: 270px;
+  width: 45px;
+  display: relative; }
+
 /* ====== Right Container Playlist ====== */
 #songs-content, #moreSongs {
   background-color: #7798BF;
@@ -51,21 +65,6 @@ body {
 #deleteButton2 {
   float: right; }
 
-.ghost-button {
-  display: inline-block;
-  width: 390px;
-  padding: 8px;
-  color: #fff;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  background: transparent; }
-
-.ghost-button:hover,
-.ghost-button:active {
-  background-color: #fff;
-  color: #000; }
-
 /* ====== Music.html Page ======== */
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
@@ -91,11 +90,16 @@ body {
 
 /* ==== table_player.html page ================================ */
 table {
-  font-size: 13px; }
+  font-size: 16px;
+  margin-top: 0; }
+  table #table-idea {
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px #888;
+    box-shadow: 0 0 5px #888; }
   table tr {
-    line-height: 25px;
+    line-height: 5px;
     min-height: 25px;
-    height: 25px; }
+    height: 55px; }
 
 /* glyphicon animations   */
 #flip-glyphicon {
@@ -119,5 +123,10 @@ table {
   color: #000;
   font-weight: bold;
   text-decoration: none; }
+
+#div-1 {
+  border: 1px solid black;
+  width: 216px;
+  height: 55px; }
 
 /*# sourceMappingURL=main.css.map */
