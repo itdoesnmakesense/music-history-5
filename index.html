@@ -2,60 +2,94 @@
 <html lang="en">
     <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
       <link rel="stylesheet" type="text/css" href="styles/main.css">
       <link rel="stylesheet" type="text/css" href="responsive.css">
       <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
       <title>Music Player</title>
     </head>
 
 
 <body>
+<!-- start Nav bar ==================================-->
 
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        
-        </div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    
+    </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <ul class="nav nav-tabs">
-                <li role="presentation" class="active"><a href="index.html"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span></a></li>
-                <li role="presentation"><a href="music.html"><span class="glyphicon glyphicon-music" aria-hidden="true"></span></a></li>
-                <li role="presentation"><a href="add.html"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></li>
-                <li role="presentation"><a href="profile.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
-            </ul>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="index.html"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span></a></li>
+            <li role="presentation"><a href="music.html"><span class="glyphicon glyphicon-music" aria-hidden="true"></span></a></li>
+            <li role="presentation"><a href="add.html"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></li>
+            <li role="presentation"><a href="table_player.html"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span></a></li>
+        </ul>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Discover</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> <!-- <span class="caret"></span> --></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Artist</a></li>
+            <li><a href="#">Album</a></li>
+            <li><a href="#">Genre</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Music Roulette </a></li>
           </ul>
-          
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Discover</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> <!-- <span class="caret"></span> --></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Artist</a></li>
-                <li><a href="#">Album</a></li>
-                <li><a href="#">Genre</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Music Roulette </a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
 
-    <div id="left-container" class=".col-md-4">
-           
+    <!--audio player 
+
+<audio src="media/myTune.mp3" id="myTune"></audio>
+
+<div class="buttons">
+    <button type="button" class="btn btn-default btn-lg button-skip-backward">
+      <span class="glyphicon glyphicon-fast-backward"></span>
+    </button>
+    <button type="button" class="btn btn-default btn-lg button-pause">
+      <span class="glyphicon glyphicon-pause"></span>
+    </button>
+    <button type="button" class="btn btn-default btn-lg button-stop">
+      <span class="glyphicon glyphicon-stop"></span>
+    </button>
+    <button type="button" class="btn btn-default btn-lg button-play">
+      <span class="glyphicon glyphicon-play"></span>
+    </button>
+    <button type="button" class="btn btn-default btn-lg button-skip-forward">
+      <span class="glyphicon glyphicon-fast-forward"></span>
+    </button>
+</div>
+
+-->
+
+
+
+
+<!-- main player -->
+
+    <div class="row">
+  <div class="col-md-2">
+  </div>
+
+              <div id="left-container" class="col-md-3">
                 <!-- Artist Dropdown -->
                   <div class="dropdown">
                       <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -87,50 +121,62 @@
 
                   <!-- Genre buttons -->
 
-                  <div class="btn-group-vertical btn-group-sm" role="group" data-toggle="buttons">
-                    <label class="btn btn-primary active">
-                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Pop
-                    </label>
-                    <label class="btn btn-primary">
-                      <input type="radio" name="options" id="option2" autocomplete="off"> R&amp;B
-                    </label>
-                    <label class="btn btn-primary">
-                      <input type="radio" name="options" id="option3" autocomplete="off"> Seapunk
-                    </label>
-                    <label class="btn btn-primary">
-                      <input type="radio" name="options" id="option3" autocomplete="off"> Bubble Gum
-                    </label>
-                    <label class="btn btn-primary">
-                      <input type="radio" name="options" id="option3" autocomplete="off"> HealthGoth
-                    </label>
-                    <label class="btn btn-primary">
-                      <input type="radio" name="options" id="option3" autocomplete="off"> Nu Rap
-                    </label>
-                  </div>
+                       <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Pop
+                      </label>
+                      <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> R&amp;B
+                      </label>
+                      <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Seapunk
+                      </label>
+                       <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> BubbleGum
+                      </label>
+                      <label class="radio-inline">
+                          <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> HealthGoth
+                      </label>
 
 
                    
                       <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-equalizer" aria-hidden="true"></span></button>
                  
-    </div>
+              </div> <!-- div id left container -->
 
 
 <!-- Song player -->
-
-            <div id="songs-content" class=".col-md-8">
-                <div class="actual-songs"class="java-styling"></div> 
+          <div class="row">
+            <div id="playlist-container" class="col-md-5">
+              <div id="songs-content">
+              
+                
+               </div><!-- songsContent -->
                 <div id="moreSongs">
-                  <!-- <button id="moreButton">More</button> -->       
-                </div>
+                  <div class="collapse" id="collapseExample"></div>
+                  
+                
+                </div> <!-- moreSongs sive -->
+            </div> <!---playlist container -->
+        
+
+
+
+
+          
+            <div class="col-md-2">
             </div>
+          
 
-    </div>
+</div> <!---div class row -->
 
 
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script data-main="javascripts/main" src="bower_components/requirejs/require.js"></script>
+  <script src= "javascripts/audio.js"></script>
 <!--  /* <script src="/javascripts/music.js"></script> -->
 
   </body>

@@ -2,19 +2,20 @@
 <html lang="en">
     <head>
       <meta charset="utf-8">
-      <link rel="stylesheet" type="text/css" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="styles/main.css">
       <link rel="stylesheet" type="text/css" href="responsive.css">
       <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    
       <title>Music Player</title>
     </head>
 
 
 <body>
+<!-- start Nav bar ==================================-->
 
-
-
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-wrapper">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -34,7 +35,7 @@
             <li role="presentation"><a href="index.html"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span></a></li>
             <li role="presentation" class="active"><a href="music.html"><span class="glyphicon glyphicon-music" aria-hidden="true"></span></a></li>
             <li role="presentation"><a href="add.html"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a></li>
-            <li role="presentation"><a href="profile.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+            <li role="presentation"><a href="table_player.html"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span></a></li>
         </ul>
       </ul>
       
@@ -55,11 +56,58 @@
   </div><!-- /.container-fluid -->
 </nav>
 
+<!--End Nav Bar=========================================== -->
+
+<!-- Carousel ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="http://lorempixel.com/output/nightlife-q-c-994-480-5.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Discover</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-large btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://lorempixel.com/output/nightlife-q-c-994-480-2.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Explore</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://lorempixel.com/output/fashion-q-c-994-480-4.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Create</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
 
    <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script data-main="javascripts/main" src="bower_components/requirejs/require.js"></script>
+  <script src= "javascripts/audio.js"></script>
 <!--  /* <script src="/javascripts/music.js"></script> -->
 
   </body>

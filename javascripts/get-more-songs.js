@@ -7,7 +7,7 @@ define(function() {
     $.ajax({
         url: "javascripts/responseMore.json",
         }).done(function(dataMore){
-     callback.call(this, dataMore.songs);
+     callback.call(this, dataMore);
    });
 },
 
