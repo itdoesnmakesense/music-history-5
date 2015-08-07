@@ -56,208 +56,42 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<!-- Practice HANDLEBARS Song player -->
- <div class="container-fluid">
-   <div class="row">
-      <div class="col-md-3"></div>
-         <div id="table-idea" class="col-md-8 table-responsive"> </div>
-       </div>
-      </div>
+    <div class="container-fluid">
+      <div class="row"id="container-height">
+        <div class=" inputContent col-md-8 col-md-offset-2 inside-full-height effect7">
+            <div class="row input-container inside-full-height">
+              <div class="col-lg-8 col-md-offset-2 ">
+                <div class="input-group col-lg-12">
+                  <span class="input-group-btn inside-full-height">
+                      <!-- <button class="btn btn-default" type="button">Song Name</button> -->
+                  </span>
+                  <input id="addSong" type="text" class="form-control" placeholder="song">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-8 -->
+              <div class="col-lg-8 col-md-offset-2">
+                <div class="input-group col-lg-12">
+                  <span class="input-group-btn">
+                    <!-- <button class="btn btn-default" type="button">Artist</button> -->
+                   </span>
+                  <input id="addArtist" type="text" class="form-control" placeholder="artist">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-8 -->
+              <div class="col-lg-8 col-md-offset-2">
+                <div class="input-group col-lg-12">
+                  <span class="input-group-btn">
+                    <!-- <button class="btn btn-default" type="button">Album</button> -->
+                   </span>
+                  <input id="addAlbum" type="text" class="form-control" placeholder="Album">
+                </div><!-- /input-group -->
+              </div><!-- /.col-lg-8 -->
 
-
- <!-- <div class="row">
-      <div class="col-md-3"></div>
-         <div id="table-idea" class="col-md-8 table-responsive">
-              <table class="table table-hover">
-                <thead>
-                  <tr class="header-row">
-                    <th class="col-md-1" data-col="tracklist">#</th>
-                    <th class="col-md-3" data-col="songName">Name</th>
-                    <th class="col-md-3" data-col="artist">Artist</th>
-                    <th class="col-md-3" data-col="album">Album</th>
-                    <th class="col-md-1" data-col="length"><span class="glyphicon glyphicon-hourglass" id="gly-spin" aria-hidden="true"></span> </th>
-                    <th class="col-md-1" data-col="rating"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>     <span class="glyphicon glyphicon-thumbs-down" id="flip-glyphicon" aria-hidden="true"></span></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <template id="songs-Template">
-                  <tr class="song-row clickable-row">
-                        <td class="col-md-1" data-col="tracklist">
-                          <span class="content">
-                            1
-                            <button aria-label="Play: song" data-id= "play" class="aria-play-button btn-link"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> 
-                            </button>
-                          </span>
-                        </td>
-                        <td class="col-md-3" data-col="songName">
-                          <span class="content">Song Name
-                            
-                          </span>
-                        </td>
-                        <td class="col-md-3" data-col="artist">
-                          <span class="content">
-                            Artist Name
-                          </span>
-                        </td>
-                        <td class="col-md-3" data-col="album">
-                          <span class="content">
-                            Album Name
-                          </span>
-                        </td>
-                         <td class="col-md-1"  data-col="length">
-                          <span class="content">
-                            3:45
-                          </span>
-                        </td>
-                         <td class="col-md-1" data-col="rating">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                  </tr>
-
-                  <tr class="song-row clickable-row">
-                    <td data-col="tracklist">
-                      <span class="content">
-                        <button aria-label="Play: song" data-id= "play" class="aria-play-button">
-                        </button>
-                      </span>
-                    </td>
-                       <td data-col="songName">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                        <td data-col="artist">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                        <td data-col="album">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                         <td data-col="length">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                         <td data-col="rating">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                  </tr>
-
-                  <tr class="song-row clickable-row">
-                    <td data-col="tracklist">
-                      <span class="content">
-                        <button aria-label="Play: song" data-id= "play" class="aria-play-button">
-                        </button>
-                      </span>
-                    </td>
-                       <td data-col="songName">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                        <td data-col="artist">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                        <td data-col="album">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                         <td data-col="length">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                         <td data-col="rating">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                  </tr>
-
-                  <tr class="song-row clickable-row">
-                    <td data-col="tracklist">
-                      <span class="content">
-                        <button aria-label="Play: song" data-id= "play" class="aria-play-button">
-                        </button>
-                      </span>
-                    </td>
-                       <td data-col="songName">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                        <td data-col="artist">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                        <td data-col="album">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                         <td data-col="length">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                         <td data-col="rating">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                  </tr>
-
-                  <tr class="song-row clickable-row">
-                    <td data-col="tracklist">
-                      <span class="content">
-                        <button aria-label="Play: song" data-id= "play" class="aria-play-button">
-                        </button>
-                      </span>
-                    </td>
-                       <td data-col="songName">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                        <td data-col="artist">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                        <td data-col="album">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                         <td data-col="length">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                         <td data-col="rating">
-                          <span class="content">
-                            
-                          </span>
-                        </td>
-                  </tr>
-                </template>
-                </tbody>
-
-          </table> 
-      </div> <!-- div col 8
-    </div><!-- div class row -->
-
+              <div class="col-lg-8 col-md-offset-2 add-button">
+              <button id="add-button" class="btn btn-default" type="button">ADD</button>
+            </div> <!-- div for add button -->
+            </div><!-- /.row with input-container -->
+        </div><!-- /inputContent -->
+      </div> <!-- /row for container-height -->
+    </div> <!-- /.container-fluid -->
 
 
 
@@ -267,6 +101,7 @@
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script data-main="javascripts/main" src="bower_components/requirejs/require.js"></script>
+  <script src="javascripts/add.js"></script>
 <!--  /* <script src="/javascripts/music.js"></script> -->
 
   </body>

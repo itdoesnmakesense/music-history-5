@@ -2,11 +2,17 @@
   baseUrl: './javascripts',
   paths: {
     'jquery': '../bower_components/jquery/dist/jquery.min',
+    'firebase': '../bower_components/firebase/firebase',
+    'lodash':'../bower_components/lodash/lodash.min.js',
+    'bootstrap-autohideingnavbar':'bower_components/bootstrap-autohidingnavbar/dist/jquery.bootstrap-autohidingnavbar.min.js',
     'hbs': '../bower_components/require-handlebars-plugin/hbs',
     'bootstrap': '../bower_components/bootstrap/dist/js/bootstrap.min'
   },
   shim: {
-    'bootstrap': ['jquery']
+    'bootstrap': ['jquery'],
+    'firebase': {
+      exports: 'Firebase'
+    }
   }
 });
 
@@ -15,18 +21,43 @@
 
 
 requirejs(
-  ["jquery","hbs","bootstrap","dom-access","populate-songs","get-more-songs"],
-  function($,Handlebars,bootstrap,dom,pop,more){
+  ["jquery","firebase","hbs","bootstrap","dom-access","populate-songs","get-more-songs"],
+  function($, _firebase,Handlebars,bootstrap,dom,pop,more){
 
       pop.setSongs(function(data){
         require(['hbs!../templates/songs'], function(songTemplate){
-         // console.log(songTemplate(data));
-          $("#table-idea").html(songTemplate(data));
-          // console.log(data);
+          $("#table-content").html(songTemplate(data));
+     
+          
+          var myFirebaseRef = new Firebase("https://scorching-inferno-1464.firebaseio.com/");
+          myFirebaseRef.child("songs").on("value", function(snapshot) {
+            console.log(snapshot.val());  
+          });
 
 
 
-// ========== clicking row functions and styling =============//
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ======jquery styling ========//
+
+
+
+
+
+
+
+       // ========== clicking row functions and styling =============//
 
 
               // ===== click and highlight ===== //
@@ -37,7 +68,7 @@ requirejs(
                     $(this).addClass("highlight");
                      });
 
-            // == mouseover and mouseout ================== //
+            // == mouseover and mouseout play button ================== //
               $(".aria-play-button").hide();
 
               $(".clickable-row").on('mouseover',function() {
@@ -49,13 +80,55 @@ requirejs(
                       $(this).find("button").hide();
                         });
 
-              $("#hid-div").hide();
 
-              $(".div-dropdown").on('mouseover',function(e){
-                console.log(e);
-                  $(this).find("#hid-div").toggle("slide");
-                  console.log(this);
-              });
+              //======= supposed to hide dropdown div NOT WORKING ===//
+              //$("#div-hid").hide();
+
+
+              $('.clickable-row').on('click',function() {
+                $('#div-hid').hasClass("col-md-12");
+                  $('#div-hid').removeClass("col-md-12 hidden");
+                    $('#div-hid').addClass("col-md-3 inside-full-height effect1 fadein highlight");
+                      console.log(this);
+                     });
+              $('.clickable-row').on('click',function() {
+               $('.player-container').hasClass('col-md-offset-2');
+                    $('.player-container').removeClass("col-md-offset-2");
+                   // $('.player-container').addClass("col-md-offset-1");
+                  });
+              // $('#div-hid').on('click',function() {
+              //  $('.song-art').hasClass('col-md-offset-2');
+              //       $('.song-art').removeClass("col-md-offset-2");
+              //      // $('.player-container').addClass("col-md-offset-1");
+              //     });
+
+
+
+
+
+              // $(".div-dropdown").on('mouseover',function(){
+
+              //   $("#div-hid").collapse('show');
+              // });
+
+
+
+
+
+
+              // ======== collapse div for .song-art ==== //
+               $('.clickable-row').on('click',function(){
+                  $(".song-art").collapse('show','slow');
+                  });
+               // $(".clickable-row").on('mouseout',function() {
+               //        $(".song-art").collapse('hide');
+               //          });
+               // $(".clickable-row").dblclick(function() {
+               //        $(".song-art").css("position","fixed");
+               //          });
+
+
+
 
         });
       });
@@ -82,7 +155,7 @@ requirejs(
 
             
 //       });
-   $('#moreSongs').append('<button class=" ghost-button btn btn-primary btn-block btnClick col-md-12" type="button" data-toggle="collapse" data-target="#moreSongs" aria-expanded="false" aria-controls="collapseExample">More</button>');
+   // $('#moreSongs').append('<button class=" ghost-button btn btn-primary btn-block btnClick col-md-12" type="button" data-toggle="collapse" data-target="#moreSongs" aria-expanded="false" aria-controls="collapseExample">More</button>');
 
 
 //       more.setSongs(function(dataMore){
@@ -111,14 +184,14 @@ requirejs(
 
 
 // ========= delete buttons===============//
- $(document).on('click',"#deleteButton",function(){
-    $(this).closest('div').remove();
-  });
+//  $(document).on('click',"#deleteButton",function(){
+//     $(this).closest('div').remove();
+//   });
 
-$(document).on('click',"#deleteButton2",function(e){
-  console.log(e);
-  $(this).closest('div').remove();
-}); 
+// $(document).on('click',"#deleteButton2",function(e){
+//   console.log(e);
+//   $(this).closest('div').remove();
+// }); 
 
 
 

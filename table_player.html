@@ -54,27 +54,53 @@
           </ul>
         </div><!-- navbar-collapse -->
 
-    <div class= "div-dropdown clearfix"> 
-    </div> <!--class hidden-div-dropdown -->
-
 
   </nav> <!--end of nav bar -->
 
 
 
 
-
+<!-- <div class="container-fluid"> 
+    <div class="row">
+      <div id="div-hid" class= "col-md-3 clearfix"> I'm supposed to be hidden</div>
+    </div>
+</div>  -->   
 
 <!-- Song player -->
   <div class="container-fluid"> 
     <div class="row">
-      <div id="div-1" class= " hide col-md-3 clearfix">
-      </div>
-         <div id="table-idea" class="col-md-8 col-md-offset-3 table-responsive">
-         </div>
+      <div class= "row-height">
+      <div id="div-hid" class= "col-md-12 clearfix">
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span> 
+      </div> <!-- div for drop down div id="div-hid" -->
+      <div class="player-container col-md-8 col-md-offset-2 inside-full-height">
+         <div class="row">
+            <div class="song-art col-md-12 collapse">
+                ***************Song art********************
+            </div>
+          </div>
+           <div class="row" id="row-header">
+                  <div class="theader col-md-12">
+                    <div class="col-md-1" data-col="tracklist">#</div>
+                    <div class="col-md-3" data-col="songName">Name</div>
+                    <div class="col-md-3" data-col="artist">Artist</div>
+                    <div class="col-md-3" data-col="album">Album</div>
+                    <div class="col-md-1" data-col="length"><span class="glyphicon glyphicon-hourglass" id="gly-spin" aria-hidden="true"></span> </div>
+                    <div class="col-md-1" data-col="rating"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>     <span class="glyphicon glyphicon-thumbs-down" id="flip-glyphicon" aria-hidden="true"></span></div>
+                  </div><!--end theader -->
+                </div> <!--end class row -->
+         <div id="table-content" class="col-md-12 table-responsive">
+         </div> <!-- div for table content -->
+        
+        </div> <!-- div player-container -->
+      </div> <!-- div class row height -->
     </div> <!-- div class row -->
 </div> <!-- div class container-fluid -->
 
+
+
+
+  <script src="bower_components/StickyTableHeaders/js/jquery.stickytableheaders.min.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>

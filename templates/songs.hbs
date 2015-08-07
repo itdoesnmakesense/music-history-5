@@ -1,5 +1,6 @@
 
-<table class="table table-box">
+<table class="table">
+         
               <thead>
                   <tr class="header-row">
                     <th class="col-md-1" data-col="tracklist">#</th>
@@ -10,10 +11,12 @@
                     <th class="col-md-1" data-col="rating"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>     <span class="glyphicon glyphicon-thumbs-down" id="flip-glyphicon" aria-hidden="true"></span></th>
                   </tr>
                 </thead>
+
+                <tbody>
   {{#each songs}}
                 
-                <tbody>
-                  <tr class="song-row clickable-row" height="30">
+                
+                  <tr class="song-row clickable-row" height="60">
                         <td class="col-md-1" data-col="tracklist" >
                           <span class="content">
                             1
@@ -49,5 +52,8 @@
                           </span>
                         </td>
                   </tr>
+                  
                   {{/each}}
+                  </tbody>
+
     </table>
