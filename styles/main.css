@@ -29,6 +29,9 @@ body {
   border: 1px solid black; }
 
 /* ====== left Container dropdown ======================== */
+#div-hid {
+  position: relative; }
+
 .hidden {
   display: none; }
 
@@ -44,6 +47,13 @@ body {
 
 .fadein {
   opacity: 2; }
+
+/* ==== artist/album dropdown div ===================== */
+.artist-dropdown {
+  border: 1px dotted green; }
+
+.dropdown {
+  border: 1px dotted red; }
 
 /* ====== Right Container Playlist =========================== */
 /* ==== song-art popup div ===================== */

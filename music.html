@@ -107,7 +107,7 @@
 
     <!-- playing with layers -->
 
-<div style="background-color:red; width:300px; height:100px; position:relative; top:10px; left:80px; z-index:2">
+<!-- <div style="background-color:red; width:300px; height:100px; position:relative; top:10px; left:80px; z-index:2">
       </div>
       
       <div style="background-color:yellow; width:300px; height:100px; position:relative; top:10px; left:80px; z-index:3;">
@@ -116,10 +116,72 @@
       <div style="background-color:green; width:300px; height:100px; position:relative; top:10px; left:80px; z-index:1;">
       </div>
 
+ -->
+
+
+<!-- Song player -->
+  <div class="container-fluid"> 
+    <div class="row">
+      <div class= "row-height">
+              <div id="div-hid" class= "col-md-12 hidden clearfix"> <!--left container -->
+                <div class="row">
+                  <div class= "row-height">
+                    <div id="left-container" class="col-md-8 col-md-offset-2">
+
+       <!-- ===== Artist Drop Down =======================================-->
+
+                      <div class="row artist-button-row">
+                          <div class="artist-dropdown inside-full-height">
+                            <div class="dropdown" id= "artists">
+                                <button class="btn btn-default dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Artists
+                                </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                  <li><a href="#">Tink</a></li>
+                                  <li><a href="#">Azealia Banks</a></li>
+                                  <li><a href="#">Beyonce</a></li>
+                                  <li><a href="#">The Presets</a></li>
+                                  <li><a href="#">Brandy</a></li>
+                                  
+                              </ul>
+                            </div><!-- .dropdown -->
+                          </div> <!-- .artist-dropdown -->
+                      </div> <!-- .artist-button-row -->
 
 
 
+      <!-- ===== Album Drop Down =======================================-->
+                      <div class="row album-button-row">
+                        <div class="album-dropdown">
+                          <div class="dropdown" id= "album">
+                              <button class="btn btn-default dropdown-toggle btn-block" type="button" id="dropdownMenu1" data-toggle="dropdown"     aria-haspopup="true" aria-expanded="true">
+                                    Albums
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">Pinkprint</a></li>
+                                <li><a href="#">B-day</a></li>
+                                <li><a href="#">Pacifica</a></li>
+                                <li><a href="#">BWET</a></li>
+                                
+                              </ul>
+                          </div> <!--.dropdown -->
+                        </div>  <!--.album-dropdown -->
+                      </div>  <!--.album-button-row -->
 
+                    </div><!--left-container -->
+                  </div><!--row-height -->
+                </div><!--row after div-hid -->
+              </div> <!-- div for drop down div id="div-hid" -->
+
+<!-- =====Music Player Container =======================================-->
+              
+            <div class="player-container col-md-8 col-md-offset-2 inside-full-height effect1">
+                <div id="table-content" class="col-md-12 table-responsive">
+                </div> <!-- div for table content -->
+            </div> <!-- div player-container -->
+        </div> <!-- div class row height -->
+    </div> <!-- div class row -->
+  </div> <!-- div class container-fluid -->
 
 
 
