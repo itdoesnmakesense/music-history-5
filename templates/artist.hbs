@@ -2,10 +2,11 @@
     Artists
 </button>
 
-<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+<ul class="dropdown-menu" aria-labelledby="dropdownMenu1" value="{{this}}">
 
-{{#each artists}}
-      <li><a href="#">{{artists}}</a></li>
+{{#each this}}
+      <li class="artist-dropdown"><a href="#">{{this}}</a></li>
+      
 
 {{/each}}
 </ul>
